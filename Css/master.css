@@ -11,11 +11,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 547px) {
+  .player {
+    height: 75vh;
+  }
+}
 .warpper {
   padding: 15px;
   border: 1px solid transparent;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px , rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+@media (max-width: 547px) {
+  .warpper {
+    width: 350px;
+  }
 }
 .detalis {
   display: flex;
@@ -42,6 +52,18 @@ body {
 .track-artist {
   margin-top: 5px;
   font-size: 1.5rem;
+}
+@media (max-width: 547px) {
+  .track-art {
+    width: 150px;
+    height: 150px;
+  }
+  .track-name {
+    font-size: 1.5rem;
+  }
+  .track-artist {
+    font-size: 1rem;
+  }
 }
 .slider-counter {
   display: flex;
@@ -79,6 +101,15 @@ body {
 .total-duration {
   padding: 10px;
 }
+@media (max-width: 547px) {
+  .seek-slider {
+    width: 45%;
+  }
+  .counter-time,
+  .total-duration {
+    font-size: 15px;
+  }
+}
 i.fa-volume-down, 
 i.fa-volume-up {
   padding: 10px;
@@ -96,6 +127,33 @@ i.fa-volume-up {
   padding: 25px;
   opacity: 0.8;
   transition: opacity 0.2s;
+}
+.fa-random,
+.fa-step-backward,
+.fa-step-forward,
+.fa-repeat {
+  font-size: 2em;
+}
+.fa-play-circle {
+  font-size: 5em;
+}
+@media (max-width: 547px) {
+  .random-track,
+  .prev-track,
+  .playsoud-track,
+  .next-track,
+  .repeat-track  {
+    padding: 20px;
+  }
+  .fa-random,
+  .fa-step-backward,
+  .fa-step-forward,
+  .fa-repeat {
+    font-size: 1em;
+  }
+  .fa-play-circle {
+    font-size: 3em;
+  }
 }
 .random-track:hover,
 .prev-track:hover,
